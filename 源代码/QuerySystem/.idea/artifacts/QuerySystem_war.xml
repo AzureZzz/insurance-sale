@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="QuerySystem:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/QuerySystem_war</output-path>
+    <root id="archive" name="QuerySystem_war.war">
+      <element id="artifact" artifact-name="QuerySystem:war exploded" />
+    </root>
+  </artifact>
+</component>

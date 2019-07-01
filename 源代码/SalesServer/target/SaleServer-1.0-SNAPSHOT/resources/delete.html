@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	
+	<script type="text/javascript">
+		function test1(){
+			$.ajax({
+		       url: 'http://localhost:8080/delete',
+		       type: 'POST',
+		       data: { 
+		       		"id":"1"
+		       	},
+		       dataType: 'json',
+		       success: function(msg){
+		       		alert("success!");
+		        },
+		        error: function(){
+		        	alert("error!");
+		        }
+		     });
+		};
+	</script>
+</head>
+<body>
+	<button id="login" onclick="test1()">删除</button>
+</body>
+</html>
